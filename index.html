@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Unit Converter</h1>
+  
+  <div class="container">
+    <div class="converter">
+      <h2>Length Converter</h2>
+      <label for="lengthInputValue">Value:</label>
+      <input type="number" id="lengthInputValue" placeholder="Enter value" />
+      
+      <label for="lengthInputUnit">From:</label>
+      <select id="lengthInputUnit">
+        <option value="cm">centi meter</option>
+        <option value="m">meter</option>
+        <option value="km">kilo meter</option>
+        <option value="inch">inches </option>
+
+      </select>
+      
+      <label for="lengthOutputUnit">To:</label>
+      <select id="lengthOutputUnit">
+        <option value="cm">centi meter</option>
+        <option value="m">meter</option>
+        <option value="km">kilo meter</option>
+        <option value="inch">inches </option>
+      </select>
+      
+      <button onclick="convertLength()">Convert</button>
+      
+      <p id="lengthResult" class="result"></p>
+    </div>
+    
+    <div class="converter">
+      <h2>Weight Converter</h2>
+      <label for="weightInputValue">Value:</label>
+      <input type="number" id="weightInputValue" placeholder="Enter value" />
+      
+      <label for="weightInputUnit">From:</label>
+      <select id="weightInputUnit">
+        <option value="kg">kilo gram</option>
+        <option value="lb">Pound lb</option>
+        <option value="gram">gram</option>
+        <option value="mg">milli gram</option>
+      </select>
+      
+      <label for="weightOutputUnit">To:</label>
+      <select id="weightOutputUnit">
+        <option value="kg">kilo gram</option>
+        <option value="lb">Pound lb</option>
+        <option value="gram">gram</option>
+        <option value="mg">milli gram</option>
+      </select>
+      
+      <button onclick="convertWeight()">Convert</button>
+      
+      <p id="weightResult" class="result"></p>
+    </div>
+    
+    <div class="converter">
+      <h2>Temperature Converter</h2>
+      <label for="tempInputValue">Value:</label>
+      <input type="number" id="tempInputValue" placeholder="Enter value" />
+      
+      <label for="tempInputUnit">From:</label>
+      <select id="tempInputUnit">
+        <option value="celsius">°C</option>
+        <option value="fahrenheit">°F</option>
+        <option value="Kelvin">°K</option>
+      </select>
+      
+      <label for="tempOutputUnit">To:</label>
+      <select id="tempOutputUnit">
+        <option value="celsius">°C</option>
+        <option value="fahrenheit">°F</option>
+        <option value="Kelvin">°K</option>
+      </select>
+      
+      <button onclick="convertTemperature()">Convert</button>
+      
+      <p id="tempResult" class="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
